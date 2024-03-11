@@ -1,5 +1,5 @@
 import { Table, Button } from "reactstrap";
-const Tables= () => {
+const Tables= (items: any) => {
     return (
         <Table>
             <thead>

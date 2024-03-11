@@ -3,8 +3,21 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Tables from "@/conpornents/Tables";
 import AddModal from "@/conpornents/modal";
+import { useState, useEffect } from "react";
 
 const Home = () => {
+
+    const [items, setItems] =useState([]);
+
+    useEffect(() => {
+        const getItems = () => {
+            fetch('http://localhost:3000/get')
+                .then(response => response.json())
+                .then(items => setItems(items))
+                .catch(err => console.log(err));
+        };
+        getItems();
+    })
     return (
         <div>
             <Head>
