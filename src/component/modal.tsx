@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-import AddForm from "@/conpornents/AddForm";
+import AddForm from "@/component/AddForm";
 
 
 const AddModal = () => {
